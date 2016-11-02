@@ -50,4 +50,19 @@
       </div>
     </div>
   </body>
+  <script>
+    const Sortable = require('sortablejs');
+    const sort = Sortable.create(document.querySelector('.dech'), {
+      animation: 150,
+      handle: '.page-title',
+      draggable: '.page',
+      onUpdate: e => {
+        const webviews = e.item.getElementsByTagName('webview');
+        if (webviews.length === 0) {
+          return;
+        }
+        webviews[0].src = webviews[0].src;
+      }
+    });
+  </script>
 </html>
