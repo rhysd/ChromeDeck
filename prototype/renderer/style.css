@@ -1,0 +1,99 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: system,-apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,"Segoe UI",Meiryo,sans-serif;
+}
+
+i {
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.dech {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  overflow: auto;
+}
+
+.page {
+  margin: auto 0 auto 8px;
+  height: calc(100% - 18px);
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #d2d0d2;
+}
+
+.page > webview {
+  height: calc(100vh - 16px);
+  width: 375px;
+}
+
+.header {
+  height: 62px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid 1px #d2d0d2;
+  background-image: linear-gradient(to bottom,#e8e6e8 0,#d1cfd1 100%);
+  color: #626062;
+}
+
+.page-title {
+  margin: 4px;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.browser-control {
+  margin: 0;
+  height: 34px;
+  width: 100%;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.url-bar {
+  box-sizing: border-box;
+  margin: 4px;
+  min-height: 18px;
+  padding: 3px 6px;
+  font-size: 13px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: 0;
+  flex: auto;
+}
+
+.reload-icon {
+  color: #c2c0c2;
+  padding-left: 8px;
+  margin-left: -34px;
+}
+
+.add-page {
+  box-sizing: border-box;
+  height: calc(100% - 16px);
+  margin: 8px;
+  width: 100px;
+  background-color: #f2f0f2;
+  border-radios: 10px;
+  border: solid 1px #d2d0d2;
+  cursor: pointer;
+  color: #d2d0d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

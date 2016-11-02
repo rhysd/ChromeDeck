@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes" />
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Dech</title>
+  </head>
+  <body>
+    <div class="dech">
+      <div class="page">
+        <div class="header">
+          <div class="page-title">Devdocs</div>
+          <div class="browser-control">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <input class="url-bar" value="https://devdocs.io"/>
+            <span class="reload-icon"><i class="fa fa-refresh" aria-hidden="true"></i></span>
+            <i class="fa fa-close" aria-hidden="true"></i>
+          </div>
+        </div>
+        <webview src="https://devdocs.io" useragent="Mozilla/5.0 (Linux; Android 5.1.1; Nexus 5 Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.65 Mobile Safari/537.36" partition="dech"/>
+      </div>
+      <div class="page">
+        <div class="header">
+          <div class="page-title">Twitter</div>
+          <div class="browser-control">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <input class="url-bar" value="https://mobile.twitter.com"/>
+            <span class="reload-icon"><i class="fa fa-refresh" aria-hidden="true"></i></span>
+            <i class="fa fa-close" aria-hidden="true"></i>
+          </div>
+        </div>
+        <webview src="https://mobile.twitter.com" useragent="Mozilla/5.0 (Linux; Android 5.1.1; Nexus 5 Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.65 Mobile Safari/537.36" partition="dech"/>
+      </div>
+      <div class="page">
+        <div class="header">
+          <div class="page-title">GitHub</div>
+          <div class="browser-control">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <input class="url-bar" value="https://github.com/trending"/>
+            <span class="reload-icon"><i class="fa fa-refresh" aria-hidden="true"></i></span>
+            <i class="fa fa-close" aria-hidden="true"></i>
+          </div>
+        </div>
+        <webview src="https://github.com/trending" useragent="Mozilla/5.0 (Linux; Android 5.1.1; Nexus 5 Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.65 Mobile Safari/537.36" partition="dech"/>
+      </div>
+      <div class="add-page">
+        <i class="fa fa-plus fa-5x" aria-hidden="true"></i>
+      </div>
+    </div>
+  </body>
+</html>
